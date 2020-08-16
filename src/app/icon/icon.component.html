@@ -1,3 +1,10 @@
-<svg [ngStyle]="{ height: size + 'px', width: size + 'px' }">
+<svg
+  [ngStyle]="{
+    height: _size + 'px',
+    width: _size + 'px',
+    top: _top + 'px'
+  }"
+  style="display: inline-block; vertical-align: top; position: relative;"
+>
   <use [attr.href]="'assets/icons/sprites.svg#' + name"></use>
 </svg>
